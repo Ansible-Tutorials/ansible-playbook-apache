@@ -1,0 +1,9 @@
+---
+- name: test my Ansible
+  hosts: prod
+  become: true
+  gather_facts: false
+  tasks:
+    - name: run echo command
+      shell: echo hello world
+...
